@@ -191,7 +191,7 @@ namespace DXApplication1
                     using (LinearGradientBrush waterBrush = new LinearGradientBrush(
                         new PointF(0, waterTop),
                         new PointF(0, maxY),
-                        Color.FromArgb(170, LightenColor(ColWater, 22)),
+                        Color.FromArgb(170, LightenColor(ColWater, 20)),
                         Color.FromArgb(205, DarkenColor(ColWater, 25))))
                     {
                         g.FillRectangle(waterBrush, geo.TankBounds.Left - 4, waterTop, geo.TankBounds.Width + 8, maxY - waterTop + 4);
